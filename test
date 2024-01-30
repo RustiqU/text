@@ -8351,3 +8351,606 @@ Country
 North Korea
 
     
+
+
+Events:
+
+North Korean Group Bluenoroff Targets Banks and Venture Capital Firms in Campaign with New Attack Methods
+By Insikt Group | Published Dec 29, 2022 | Last modified Jan 12, 2023
+Note
+Diamond Model
+Entities
+Sources
+The North Korea-aligned BlueNoroff Group has added new attack tools and delivery methods to its arsenal in a recent campaign targeting the finance and investments sector, according to new research from Kaspersky. In the campaign, BlueNoroff delivered new strains of custom malware via optical disk image (.iso) and virtual hard disk (.vhd) files that contain decoy Microsoft Office attachments. This method allowed BlueNoroff to bypass Microsoft’s Mark-of-the-Web (MotW) protections on victim machines. BlueNoroff registered approximately 70 typosquat domains of primarily banks and venture capital firms in Japan, the US, the UAE, and Vietnam. BlueNoroff used the typosquat domains to send phishing messages to targets at these institutions in an attempt to intercept cryptocurrency transactions involving banks and venture capital firms. Furthermore, BlueNoroff used Visual Basic Script (VBS) and Windows Batch scripts, along with a new downloader, to deliver its payload. 
+
+More information on specific victims and the attack methods that BlueNoroff used to compromise them are in Kaspersky’s full report.
+
+BlueNoroff is a subgroup of the Lazarus Group APT group, known for its involvement in several high-profile heists, including the 2016 theft of $81 million USD from Bangladesh Bank through SWIFT. Lazarus Group’s preferred initial access vectors include spear phishing and strategic web compromise. The group uses a combination of commodity and open-source malware, as well as custom tools for remote access, and has also used multiple open source Offensive Security Tools to conduct network reconnaissance, access credentials, and establish persistence. More recently, Lazarus Group has used social engineering on social networking sites and chat applications such as WhatsApp to deliver weaponized open source software via ISO files to victims. 
+
+While BlueNoroff has traditionally focused on financially motivated operations targeting banks and SWIFT-connected servers. In campaigns tracked as CryptoCore, SnatchCrypto, and CryptoMimic, the group has shifted toward targeting cryptocurrency businesses and private investment firms as the main source of the group’s illegal income, with several high-profile incidents this year, including the theft of $625 million in ETH and USD Coin (USDC) in the March 2022 attack on the Ronin Network. This corresponds to an overall uptick in threat actors’ interest in targeting cryptocurrency and DeFi over the last 2 years.
+
+Insikt Group has been tracking BlueNoroff infrastructure, known as CIPHERROCKET, since July 2021. Since then we have detected at least 22 malicious CIPHERROCKET servers, with the newest ones registered as recently as December 9, 2022. Based on the domains associated with this infrastructure and supporting lure documents we suspect that BlueNoroff are abusing the brands of Japanese cryptocurrency and private investment firms to trick potential victims into opening malicious content, with a likely objective of stealing crypto assets from these organizations.
+
+BlueNoroff, and Lazarus Group more broadly, has been active since at least 2009, and has been observed targeting organizations within the aerospace, defense, engineering, finance, government, media, and technology sectors. The group has proven to be broad in their victimology - notable network intrusions linked to Lazarus Group include the 2014 Sony breach, the global Wannacry ransomware attack, and a major heist resulting in the theft of $81 million USD from Bangladesh Bank through the Society for Worldwide Interbank Financial Telecommunication (SWIFT) global payment network in 2016.
+
+BlueNoroff’s financially-motivated intrusion campaigns targeting traditional banking, e-commerce payment systems, and cryptocurrency operations very likely support the North Korean government’s continued efforts to generate accessible funds for the regime, in spite of the US economic sanctions levied against them. Based on historical trends and the anonymous, decentralized, and largely unregulated nature of cryptocurrencies, Recorded Future believes that BlueNoroff and other DPRK-linked groups are very likely to continue targeting cryptocurrency entities for financial gain.
+
+Given the ongoing disproportionate criminal attention to cryptocurrency in the finance sector, employees should be warned against using company accounts or devices to access cryptocurrency platforms. Additionally, emails or domains referencing common cryptocurrency platforms like Coinbase, MetaMask, or Binance should be monitored.
+
+
+FBI Says North Korean Hackers Behind $100 Million Horizon Bridge Crypto Theft
+By Insikt Group | Published Feb 2, 2023 | Last modified Feb 13, 2023
+Note
+Diamond Model
+Entities
+Sources
+On January 23, 2023, the US Federal Bureau of Investigation (FBI) confirmed that the Lazarus Group, a cyber threat actor group associated with North Korea and also known as APT38, was responsible for the cyberattack against the blockchain firm Harmony’s Horizon Bridge. The original attack was reported on June 24, 2022, and resulted in the theft of $100 million worth of cryptocurrency.
+
+The FBI reported that on January 13, 2023, Lazarus Group used a privacy protocol called Railgun, which is similar to a cryptocurrency mixer, to launder over $60 million worth of Ethereum (ETH) that had been stolen during its June 2022 theft of Harmony’s Horizon Bridge assets. Some of the stolen Ethereum was then converted to bitcoin (BTC) via virtual asset service providers. The FBI, in cooperation with some of the virtual asset service providers, successfully froze a portion of the stolen funds, while the remainder of stolen funds were transferred to 11 of the adversary’s bitcoin addresses. According to 1 report, 124 bitcoins (approximately $2.84 million) were recovered after the transfers were blocked.
+
+Previously, in April 2022, the FBI, the US Cybersecurity and Infrastructure Security Agency (CISA), and the US Treasury Department published a joint cybersecurity advisory about a phishing campaign they dubbed “TraderTraitor.” The phishing campaign used social engineering techniques to lure its victims into downloading compromised cryptocurrency applications containing the Manuscrypt remote access trojan (RAT). The FBI noted that TraderTraitor had been used by Lazarus Group to execute the June 2022 Harmony’s Horizon Bridge theft.
+
+On April 21, 2022, Twitter user @JAMESWT_MHT shared samples of “TraderTraitor” distributed in spear phishing campaigns, and Insikt Group obtained samples for macOS (Mach-O file) and Windows (EXE file) systems. An Intezer Sandbox analysis identified the Mach-O sample as suspicious and the executable sample as malicious. The Mach-O file contains commands to retrieve host information and contacts the domain aideck[.]net. The EXE file contacts the same domain. It also detects virtual machines and checks for system information. Additional analysis from Intezer detected Lazarus signatures in 69% of the sample’s code. Relevant indicators of compromise (IOCs) from this analysis are listed below.
+
+It is highly likely that North Korean state-sponsored cyber actors will continue to target the financial and cryptocurrency industry in an effort to generate revenue for North Korean government priorities that have been hampered by sanctions, such as weapons programs. It is also highly likely that threat actors will continue to use cryptocurrency because its inherent pseudonymity, the ability to direct funding flows virtually, and the inconsistent regulatory oversight between countries make it an attractive funding option. While multiple laws, regulations, and guidelines already exist with respect to cryptocurrency and anti-money laundering efforts, these are often inconsistent across jurisdictions, and where they do exist, are not always fully enforced.
+
+According to the joint advisory on TraderTraitor, the following controls and mitigations should be used to protect against future attacks.
+• Do not trust third-party downloads and be especially cautious with cryptocurrency applications. North Korean actors have been increasingly active with currency generation operations. Users should always verify file downloads and ensure the source is from a reputable or primary (preferred) source and not from a third-party vendor.
+• Enforce credential requirements and multifactor authentication. North Korean malicious cyber actors continuously target user credentials, email, social media, and private business accounts. Be aware of MFA interception techniques for some MFA implementations and monitor for anomalous logins.
+• Educate users on social engineering on social media and spearphishing. North Korean actors rely heavily on social engineering, abusing email and social media platforms to build trust and send malicious documents to unsuspecting users.
+
+FBI Confirms North Korea-linked Lazarus APT Group Responsible for June 2022 Cyberattack Against Harmony’s Horizon Bridge
+By Insikt Group | Published Jan 25, 2023 | Last modified Feb 14, 2023
+Note
+Diamond Model
+Entities
+Sources
+On January 23, 2023, the U.S. Federal Bureau of Investigation (FBI) confirmed that the North Korea-linked advanced persistent threat (APT) group 28, also known as Lazarus Group, was responsible for the cyberattack against blockchain firm Harmony’s Horizon Bridge, which was reported on June 24, 2022. The cyberattack resulted in the theft of $100 million worth of cryptocurrency by Lazarus Group.
+
+The FBI reported that on January 13, 2023, Lazarus Group had used a privacy protocol called Railgun to launder over $60 million worth of Ethereum (ETH) that had been stolen during its June 2022 theft of Harmony’s Horizon Bridge assets. Some of the stolen Ethereum was converted to bitcoin (BTC) via virtual asset service providers. The FBI, in cooperation with some of the virtual asset service providers, had successfully frozen a portion of the stolen funds, while the remainder of stolen funds were transferred to 11 of the adversary’s bitcoin addresses.
+
+Previously, in April 2022, the FBI, the U.S. Cybersecurity and Infrastructure Security Agency (CISA), and the U.S. Treasury Department published a joint cybersecurity advisory about a phishing campaign they dubbed “TraderTraitor.” The phishing campaign utilized social engineering techniques to lure its victims into downloading compromised cryptocurrency applications containing the Manuscrypt remote access trojan (RAT). The FBI noted that TraderTraitor had been used by Lazarus Group to execute the June 2022 Harmony’s Horizon Bridge cyberattack and asset theft.
+
+Coinbase Hack Linked to Group Responsible for Twilio, CloudFlare Hacks
+By Insikt Group | Published Mar 6, 2023 | Last modified Mar 13, 2023
+Note
+Diamond Model
+Entities
+Sources
+Coinbase disclosed on February 20, 2023, that it was the target of an SMS phishing campaign on February 5, 2023, which ultimately resulted in the exposure of limited internal data. Coinbase employees largely ignored the phishing messages; however, 1 employee was lured into clicking a malicious link and entering their username and password. After acquiring this username and password credential pair, the threat actor behind the campaign engaged in repeated attempts to gain remote access to Coinbase, leading to subsequently blocked login attempts. However, according to Coinbase, the purportedly sophisticated actor, which Coinbase believes is linked to the 0ktapus phishing operation, proceeded to call the affected employee's phone pretending to be from Coinbase’s corporate Information Technology (IT) department. The attacker convinced the employee to follow some instructions initially regarding account access and information; however, subsequent requests garnered increased suspicion as the conversation continued, causing the Computer Security Incident Response Team (CSIRT) to reach out to the employee, resulting in the termination of all communication.
+
+Coinbase states that the threat actor acquired only limited contact information, including some employee names, email addresses, and phone numbers. No funds were reported as lost, and no further customer information was compromised.
+
+Coinbase disclosed the information to give transparency on how vulnerable organizations can be to social engineering attacks and highlight details regarding the adversary's tactics, techniques, and procedures (TTPs). Below are several detection opportunities provided by Coinbase that defenders can look for within log data:
+
+• Any web traffic to the following web address; sso-*.com, *-sso.com, login.*-sso.com, dashboard-*.com, or *-dashboard.com.
+• Any downloads or attempted downloads for AnyDesk or ISL Online remote desktop viewers, especially if that software is not common in your environment.
+• Attempted accesses from Mullvad VPN
+• Incoming phone calls or text messages from Google Voice, Skype, Vonage, Nexmo, or Bandwidth[.].com
+• Unexpected attempts to install 'EditThisCookie' browser extension
+
+0ktapus is a phishing operation discovered by Group-IB dating back to March 2022 that resulted in the compromise of over 9,000 accounts and of 130 organizations including Twilio, Cloudflare, and DoorDash. The campaign focused on stealing Okta identity credentials and 2-factor authentication (2FA) codes from customers and employees of targeted companies to gain access to corporate services. The targeted companies were customers of Okta Inc., an American identity and access management company.
+
+Coinbase and customers of Coinbase have regularly been the subject of phishing and social engineering attacks. The following are several cyber threat events within the last 2 years involving Coinbase.
+
+• In November 2022, an ongoing phishing campaign was identified that bypassed 2-factor authentication (2FA) by communicating with victims via an in-browser chat window.
+• The North Korean Lazarus Group was identified in 2022 by SentinelOne and Malwarebytes conducting Coinbase attack chains through the use of job offer lures via LinkedIn to spread trojanized cryptocurrency wallets and investment applications that steal people’s private keys and siphon their holdings.
+• On October 1, 2021, Coinbase revealed that an unknown threat actor had stolen cryptocurrency from approximately 6,000 customers via a flaw in the exchange’s SMS multi-factor authentication security feature.
+
+The expansion of the cryptocurrency market and adoption of cryptocurrency by over 420 million users has made it a prime target for threat actors looking to defraud investors. In 2022, cryptocurrency cybercrime profits reached an all-time high, recording over $20 billion in revenue, according to a Chainalysis study. The decentralized nature of cryptocurrency means that it is difficult to cancel or reverse transferred funds, so they are very attractive for threat actors who hope to steal funds for good. There are several methods that threat actors can use to target users and companies of cryptocurrency; however, defrauding cryptocurrency users through phishing to gain access to cryptocurrency wallets and corporate services remains a frequent occurrence. A white paper conducted by Interisle found that, from May 2021 to April 2022, cryptocurrency-themed phishing had risen 257%.
+
+In addition to the TTPs from Coinbase, we recommend the following guidelines to avoid social engineering and phishing attacks targeted at cryptocurrency companies and users.
+
+• Be suspicious of common indicators of malicious messages, including; suspicious sender addresses, generic greetings, spoofed hyperlinks, incorrect spelling, and suspicious or unprompted attachments.
+• Only provide information regarding personal or organizational information if you are confident of the person’s identity. If unable, contact the company directly and verify.
+• Do not reveal sensitive personal or financial information in emails, and do not respond to emails that request this information.
+• Verify a website's security (e.g., HTTPS vs. HTTP) before sending sensitive information.
+
+Lazarus Group's Operation No Pineapple! Targeted Medical Research and Technology Sectors
+By Insikt Group | Published Feb 3, 2023 | Last modified Mar 23, 2023
+Note
+Diamond Model
+Entities
+Sources
+The North Korean advanced persistent threat (APT) Lazarus Group stole 100GB of data from multiple medical research firms and technology providers in a cyber espionage campaign dubbed Operation No Pineapple!. Security researchers at WithSecure published a report on February 2, 2023, in which they attributed Operation No Pineapple! to Lazarus Group based on similar tactics, techniques, and procedures (TTPs) from previous Lazarus Group campaigns, as well as victimology and time zone hours of operation. Notably, DTrack and GREASE were 2 malware variants used in the campaign that Lazarus Group has also historically used.
+
+Lazarus Group gained initial access to victim networks in August 2022 by exploiting vulnerabilities in Zimbra mail servers (CVE-2022-27925 and CVE-2022-37042), allowing it to install open-source web shells (base.jsp and carbon.jsp) for persistence and use of tunneling software, such as Plink and 3Proxy. In 1 particular attack, the attackers deployed Cobalt Strike beacons and used compromised accounts to establish persistence.
+
+Once attackers established persistence on victim devices, the group used the Impacket “atexec” module to execute payloads and scripts, like PowerShell, Windows Command Shell, and Unix. Lazarus Group then exploited CVE-2021-4034, a vulnerability in pkexec (also known as pwnkit), to elevate system privileges, access sensitive mailbox data, and dump credentials via Local Security Authority Subsystem Service (LSASS) and Mimikatz.
+
+Lazarus Group returned 1 month after its initial intrusion to reconnoiter networks and gather more information, deploying several binaries that were signed with “LAMERA CORPORATION LIMITED”. During the 2 months in which Lazarus Group remained undetected on a victim’s network, it managed to exfiltrate approximately 100 GB of data. Lazarus Group concealed its malicious activities by deleting artifacts from infected networks and clearing logs, and communicated with the command-and-control (C2) server through the SSH protocol.
+
+Dtrack has been a regular feature of Lazarus Group campaigns, which are most prominently motivated by financial reward, but have also involved espionage. Historically, Lazarus Group deployed Dtrack in attacks on banks, research organizations, and energy and utilities companies. Clients can monitor Dtrack with the YARA rule attached to a Hunting Package, which Recorded Future developed based on unique strings in the malware, as well as with import hashes of encrypted versions of Dtrack.
+
+GREASE has featured in campaigns by Kimsuky, another North Korean APT. Kimsuky has itself been associated with APT37, another North Korean regime-sponsored cyber threat group that has historically targeted organizations in defense, government, media, chemical, electronic, manufacturing, aerospace, automotive, and healthcare.
+
+WithSecure attributed Operation No Pineapple! to Lazarus Group based on TTPs from previous Lazarus Group operations, however, researchers observed new techniques as well. These included the use of host IP addresses without domain names, deployment of a new variant of the Dtrack infostealer, and use of a new variant of GREASE malware for creating administrator accounts and bypassing protection.
+
+During Operation No Pineapple!, Lazarus Group took several measures to ensure that it operated stealthily. Lazarus Group used IP addresses without domain names to host malware, and a separate backdoor to transfer data that it exfiltrated locally, effectively turning compromised host machines into C2 servers themselves.
+
+Operation No Pineapple! targeted enterprises not only in medical research and technology industries, but also the chemical engineering, energy, defense, and academia sectors. These industries are often the targets of state-sponsored APT groups with geostrategic objectives.
+
+Successful APT operations do not necessarily result in major, headline-grabbing disruption of service events (like a DDoS attacks). Instead, cyberespionage operations often cause damage to victims that is less immediately destructive or apparent. By breaching target networks stealthily and persisting on them undetected for extended periods of time (2 months in the case of Operation No Pineapple!), APT groups or others conducting surveillance can exfiltrate large quantities of sensitive or classified data. The adversary can potentially cause even more damage (in terms of significance) depending on the data or intelligence they collect and exfiltrate: consider the long term attack on SolarWinds, a technology provider for many US federal government agencies, in which Russian intelligence operatives remained undetected on networks for up to 9 months, until the breach was discovered in December 2021.
+
+North Korean Espionage Group Engages in Cybercrime to Fund Operations
+By Insikt Group | Published Apr 5, 2023
+Note
+Diamond Model
+Entities
+Sources
+A previously-undocumented North Korean APT group is engaging in cybercrime to fund its espionage operations against critical sectors in the West. Security researchers at Mandiant published new findings on the group, which they’ve dubbed APT43, on March 28, 2023. APT43’s specific victims are individuals in government, defense, and academic research in the US, Europe, Japan, and South Korea. APT43 has been active for at least 5 years, during which time it has also targeted diplomats, university professors, and think tank researchers who specialize in Korean peninsula geopolitics and related fields like nuclear security. Mandiant researchers assessed with high confidence that APT43 is sponsored by the North Korean regime, and they linked the threat group specifically to the Reconnaissance General Bureau (RGB), Pyongyang’s main foreign intelligence apparatus. APT43’s objectives are geopolitical in nature, and align closely with North Korea’s geostrategic objectives, researchers said.
+
+APT43 sends spearphishing emails that direct its victims to malicious websites posing as legitimate login pages. Victims enter their credentials into these fake websites, allowing adversaries to harvest their credentials. APT43 then uses the stolen credentials to authenticate to legitimate services to collect information about the victims. Researchers said that APT43 operators also accessed victims’ contact lists to find new targets for their spearphishing campaign.
+
+APT43’s spearphishing tactics are not confined to luring victims into clicking on malicious links or authenticating to malware-infected websites, however. In some cases, researchers said that APT43 operators simply emailed geopolitics researchers in academia, masquerading as their colleagues, and solicited their opinions or analysis on security and defense-related topics.
+
+The information that APT43 is most interested in accessing is that which is held by the US Military, defense agencies, and private enterprises that make up the defense industrial base (DIB) in the US and in allied countries. Western academic researchers who study nuclear security and nonproliferation policies are also targets of the group’s reconnaissance operations. Researchers noted that private manufacturers of goods whose exports to North Korea are prohibited by US sanctions are also targets.
+
+Mandiant researchers said that unlike other groups that act on behalf of the North Korean regime, APT43 is responsible for funding its own operations, and cybercrime is its preferred method for raising money. Specifically, they have used malicious Android apps to lure Chinese mobile users into fraudulent cryptocurrency loan schemes. APT43 then launders the cryptocurrency it steals from these Chinese victims and launders it under different aliases to cover its tracks.
+
+Mandiant researchers said that previously-observed APT43 activity was attributed to groups like Kimsuky (Thallium), and that APT43 has used malware variants that Lazarus Group has also used. Kimsuky has been highly active in espionage operations targeting South Korea’s Atomic Energy Research Institute (KAERI), Russian researchers, South Korean think tanks, and pharmaceutical companies researching and developing COVID-19 vaccines. Spearphishing has likewise played a vital role in Kimsuky operations as one of its primary vectors for obtaining initial access to its victims. Kimsuky has frequently used Microsoft Word and Hancom Office lure documents with embedded Visual Basic scripts or VBS. (Hancom Office is South Korean software).
+
+APT43’s commonly used malware variants include publicly-available strains like gh0st RAT, QuasarRAT, Amadey, and Lonejogger (a tool associated with APT38 or UNC1069). However, the group also has a set of its own custom attack tools, like Pencildown, Pendown, Venombite, Egghatch, Logcabin, Lateop, BabyShark, and Hangman. Mandiant researchers provided a more complete list of the malware variants they detected in APT43 campaigns in their report. These include downloaders, droppers, builders, launchers, data miners, and utilities.
+
+Mandiant researchers concluded that previously-observed overlaps in APT43’s attack infrastructure, tools, and targeting, with the TTPs of other North Korean cyberespionage groups like Kimsuky, Lazarus Group, and TEMP.Hermit are most likely temporary in nature and reflect an effort in sharing resources. Sharing of such resources among APT groups from the same nation-states is not uncommon; Recorded Future has observed significant overlaps in malware tools and attack infrastructure between distinct Chinese APT groups acting on behalf of the Chinese government, for instance.
+
+In addition to the malware tools and attack infrastructure commonalities with other known North Korean state-sponsored APT groups, Mandiant researchers noted shifts in APT43’s victimology that indicate close correlation with the North Korean regime. From the time Mandiant started tracking APT43 in 2018 until October 2020, the group’s victims were consistently entities related to government and defense. But from October 2020 through October 2021, Mandiant observed APT43 start to target entities in the health and pharmaceutical sectors. They attributed this largely to North Korean regime objectives in combating COVID-19 at the height of the pandemic. During this 12-month period, however, researchers said that APT43 operations targeting government and defense entities remained ongoing. In an indication of the group’s sophistication, researchers observed the group use different malware variants for different targets. For example, researchers observed APT43 deploy variants like VENOMBITE, SWEETDROP, and BITTERSWEET in attacks solely on the South Korean healthcare sector.
+
+APT43 is likely to continue its operations targeting government and government-adjacent organizations, especially those concerned with security and defense, so long as these remain relevant to the North Korean regime’s geostrategic objectives. We expect that APT43 will continue to use the initial access methods we have already observed, especially spearphishing through malicious links and direct email messages, so long as they continue to yield results and provide the group with the information they seek, including any data that provides the regime with an advantage in a potential future conflict with North Korea’s enemies.
+
+Trojanized 3CXDesktopApp Binary Files Deployed in Supply Chain Attack
+By Insikt Group | Published Apr 5, 2023
+Note
+Diamond Model
+Entities
+Sources
+On March 29, 2023, open source reporting emerged from CrowdStrike's Falcon OverWatch within a subreddit specific to the company detailing their observations around unexpected malicious activity emanating from a legitimate, signed binary, 3CXDesktopApp. 3CXDesktopApp is a softphone application from 3CX for voice over IP (VoIP). Endpoints with the 3CXDesktopApp application installed were identified receiving a malicious update of this software that was signed by 3CX and downloaded from the company’s servers. This was part of the default automatic update process and would also result in information-stealing malware being installed on the victim’s host. Researchers at Volexity stated that it is possible that additional malicious activity may have taken place if the threat actor deemed targeted endpoints to be of sufficient interest.
+
+The malicious activity identified includes beaconing to actor-controlled infrastructure, deployment of second-stage payloads, and, in a small number of cases, hands-on-keyboard activity. OverWatch has notified customers where hands-on-keyboard activity has been observed and the company is in contact with customers under their management where 3CXDesktopApp is present.
+
+The 3CX PBX client is available for Windows, macOS, and Linux; with mobile versions for Android and iOS also being available, as well as a Chrome extension and a Progressive Web App (PWA) browser-based version of the client. 3CX’s CEO Nick Galea stated the PWA version of the client could avoid compromise. At time of writing, activity has been observed on both Windows and macOS. The advisory on Reddit also stated that CrowdStrike's Intelligence Team is in contact with 3CX and that there is suspected nation-state involvement by the threat actor LABYRINTH CHOLLIMA. LABYRINTH CHOLLIMA overlaps with Insikt Group reporting on North Korean state-sponsored activity associated with Lazarus Group.
+
+Insikt Group analyzed the first stage loader, 3CXDestkopApp.exe, in addition to the 2 second stage files and a MacOS installer associated with the 3CXDesktop supply chain compromise. While we did not analyze the MSI installer file, other researchers advise that it contains 3 files of interest to this investigation: 3CXDesktopApp.exe, ffmpeg.dll, and d3dcompiler_47.dll. The first stage loader, 3CXDesktopApp.exe, loads the compromised version of ffmpeg.dll. Next, ffmpeg.dll’s primary function is to read the encrypted shellcode from the end of the d3dcompiler_47.dll file, which is demarcated by 8 bytes (0xfeedface). The shellcode is decrypted using a hardcoded, 12 character-length key and a standard RC4 cipher.
+
+One of the purposes of the shellcode is to load an embedded DLL which ultimately downloads various files that contain additional code. Open source reporting stated that the next-stage payload is a JSON object that is then parsed and must further be decrypted (with the same AES-GCM decryption function). Other researchers stated that the next stage is expected to be a 64-bit PE that is reflectively loaded through a shellcode loader stored at the head of the file. A shellcode stub prepended to the payload used to map it into memory shares similarities with APPLEJEUS loader stubs, which has been historically associated with North Korean threat activity.
+
+In terms of attacker infrastructure, the domains used in these attacks were reported to be hosted on shared infrastructure and appear to proxy requests to an unknown upstream C2. The domains were registered with several providers, including NameCheap, Public Domain Registry, and NameSilo. Some of the domains were not registered using WHOIS protection, and each was registered using a unique email address. CrowdStrike Intelligence has assessed there is nation-state involvement specifically from the threat actor LABYRINTH CHOLLIMA which overlaps with Insikt Group’s coverage of Lazarus Group activity.
+
+In an April 1, 2023, statement, 3CX stated that they continued to investigate the attack and recommended that customers uninstall the 3CX Electron Desktop Application. However, in an April 3, 2023, statement to The Register, Galea seemingly stated that the indicators of compromise (IOCs) from the attack were false positives. It remains unclear what this recent statement means for the incident and the application’s security, especially with simultaneous reports of a known backdoor being deployed through the supply chain attack.
+
+Several reports have outlined the known extent of this ongoing attack. Check Point research published that they are aware of 3 trojanized Windows installers, all with downloaders in the form of DLL files. Furthermore, on Twitter, security researchers Patrick Wardle published details about the malware observed via malware analysis. In terms of exposure, Huntress Labs reported at the time of writing their advisory that a Shodan search showed 242,519 exposed phone management consoles.
+
+The extent of this activity is currently unknown and additional mitigation steps are available within the Reddit thread, which is being updated periodically. These steps include detecting instances of 3CXDesktopApp and ensuring that suspicious processes linked to it are contained and eradicated. Lastly, Insikt Group is aware of other open source hunting techniques that have been shared within open source reporting in association with this activity. A roundup of reported Sigma and YARA rules, including from Recorded Future,to assist with the detection process is available to review.
+
+North Korea Lazarus Group DeathNote Campaign Expands Tactics, Techniques, and Procedures
+By Insikt Group | Published Apr 13, 2023
+Note
+Diamond Model
+Entities
+Sources
+Kaspersky reported on April 12, 2023, regarding a Lazarus Group campaign, tracked as DeathNote, also known as Operation Dream Job, that was expanding its tactics, techniques, and procedures (TTPs). Lazarus Group is a North Korean threat group that has previously targeted cryptocurrency-related businesses. Lazarus Group transitioned to automotive and academic sectors that work under defense contractors and diplomatic services in Eastern Europe. The DeathNote campaign occurred between October 2019 and March 2022. The majority of victims were in Africa, South Korea, Cyprus, the United States, Taiwan, and Hong Kong.
+
+Lazarus Group used social engineering lures that mimicked cryptocurrency businesses and defense contractors to trick victims into interacting with macro-laced Microsoft Office Word attachments and PDF files. When the victims opened the file with macro-enabled, the macro installed an obfuscated Visual Basic Script (VBScript) that extracted 2 payloads in the form of harmful UltraVNC with backdoor capabilities and a multi-stage binary infection process.
+
+In the event the payload was executed without a command-line parameter, the payload displayed a legitimate UltraVNC viewer to conceal malicious activities when the payload ran in the background. Lazarus Group embedded the backdoors, such as Manuscrypt and COPPERHEDGE, in svchost.exe to evade detection and establish a connection to the command-and-control (C2) server. Additionally, the downloader gathered a follow-on payload, such as the Blindingcan, to execute in the memory. Lazarus Group sideloaded Mimikatz to log keystrokes and steal clipboard data from the victims.
+
+North Korea-Sponsored Threat Group Suspected to be Using New macOS Malware in Financially-Motivated Campaigns
+By Insikt Group | Published Apr 26, 2023 | Last modified May 2, 2023
+Note
+Diamond Model
+Entities
+Sources
+Jamf Threat Labs reported on April 21, 2023, that it had discovered a new macOS malware family, which it dubbed RustBucket, which they suspected could be attributed to North Korean state-sponsored threat group APT38. APT38 is known to target financial entities around the world to steal cryptocurrency. The new macOS malware RustBucket initially masquerades as a PDF viewer application and lures victims to download and open a malicious finance-themed PDF, which then deploys a trojan that conducts reconnaissance on the victim machine.
+
+According to Jamf Threat Labs, how threat actors achieved initial access with RustBucket is unconfirmed at this time, but RustBucket masquerades as a PDF viewer application (Internal PDF Viewer.app). Jamf Threat Labs noted that the PDF viewer application can likely only be executed if the victim manually overrides macOS’s Gatekeeper. Gatekeeper warns users who are about to execute software created by a developer that has not registered with Apple; it can be configured to be overridden with one click. The PDF viewer, once executed, contains a stage-one AppleScript file that retrieves a second-stage payload from a C2 server. The stage-two payload is written in Objective-C and opens a malicious PDF file. A sample PDF file was a 9-page venture capital investment strategy document that when opened, reached out to a C2 server to download a stage-three trojan that could then conduct reconnaissance of the victim machine. As of April 21, 2023, Jamf Threat Labs noted that VirusTotal could not detect the stage-one or stage-two RustBucket components.
+
+Jamf Threat Labs connected RustBucket to BlueNoroff primarily because of the use of cloud.dnx[.]capital in the first stage of the attack. Proofpoint connected the domain to BlueNoroff’s campaigns in a January 2023 report. Additionally, Kaspersky reported that BlueNoroff “created numerous fake domains impersonating venture capital firms and banks,” which “align[ed] with the social engineering schemes discovered in the [RustBucket] PDF document” sample.
+
+Insikt Group reporting on recent threat activity related to APT38 can be found using the Recorded Future Intelligence Cloud. Some researchers classify APT38 as a subgroup of Lazarus Group. Lazarus Group is the umbrella term covering threat groups that conduct espionage and financially-motivated campaigns on behalf of the Democratic People’s Republic of Korea (DPRK; North Korea). According to Recorded Future data, APT38 has been active since at least 2014. APT38 has a history of conducting thorough reconnaissance of their targets before attempting initial access operations. Preferred methods for initial access have included strategic web compromise, searching for vulnerable servers on the target’s network, and spear phishing key employees that the group identified during the reconnaissance phase. In recent years, the group has shifted its targeting to financial technology and cryptocurrency companies as well as their users. On January 23, 2023, the US Federal Bureau of Investigation (FBI) confirmed that APT38, was responsible for the theft of $100 million in cryptocurrency from the blockchain firm Harmony’s Horizon Bridge. More information can be found in this Insikt Group report.
+
+It is highly likely that North Korean state-sponsored cyber threat actors will continue to target the financial and cryptocurrency industry in an effort to generate revenue for North Korean government priorities. It is also likely that these threat groups will continue to develop sophisticated methods to target the Apple ecosystem, as Apple products continue to steadily increase in market share. Given this malware’s and APT38’s historical use of social engineering to facilitate infection chains, organizations can take measures to prevent compromise via human error by implementing security awareness training for its employees. Organizations that employ macOS in day-to-day operations should ensure that user’s cannot override the operating system's built-in Gatekeeper. Administrators can use mobile device management (MDM) solutions to restrict network users without administrative authorities from removing applications or downloading new ones. This measure alone could thwart the RustBucket infection chain.
+
+At a minimum, administrators should also enforce mandatory multi-factor authentication (MFA) for all network users; authentication applications like Google Authenticator should be used in lieu of authentication via email or SMS. Given APT38’s history of conducting thorough reconnaissance before attempting initial access operations, organizations are urged to ensure its critical, vulnerable systems are not exposed to the internet and that public-facing applications are securely configured to prevent opportunistic attacks. Implementing the principles of granting the least privilege based on the role can minimize a threat actor's access to high-value data once they have accessed a victim’s account.
+
+Lazarus Group Exploits Vulnerable Windows IIS Web Servers and Side-Loads DLL Malware
+By Insikt Group | Published May 24, 2023
+Note
+Diamond Model
+Entities
+Sources
+AhnLab Security Emergency Response Center (ASEC) published a report on May 23, 2023, about Lazarus Group’s recent campaign that exploits vulnerable Windows Internet Information Services (IIS) web servers. Lazarus Group purportedly exploited poorly managed or vulnerable web servers to enable their initial infection phase. The Lazarus Group also used their usual DLL side-loading technique to run their malware within the vulnerable web server. 
+
+According to ASEC’s report, Lazarus Group deployed a malicious DLL (msvcr100.dll) alongside a normal application (Wordconv.exe) through the Windows IIS web server process (w3wp.exe). The malicious DLL was executed alongside with the list of DLLs of the Wordconv.exe. The malicious DLL was executed first and loaded into the memory of the Wordconv.exe process via DLL search priority. ASEC assessed that msvcr100.dll is possiblya variant of the previously reported malware (cylvc.dll), because they have similar code. Notably, both malicious DLLs decrypt the data files with the Salsa20 algorithm, then execute the portable executable (PE) file in memory.
+
+Once the Lazarus Group established a foothold on the compromised web server, they created additional malware (diagn.dll) using a Notedpad++ plugin exploit. The diagn.dll received the aforementioned PE file and executed it in the memory. The PE file’s malicious behavior in the recent campaign is undetermined. However, ASEC surmised that the PE file is Mimikatz malware because Lazarus Group was observed accessing the memory of the lsass.exe process to obtain system data and credentials. 
+
+Lastly, the Lazarus Group used the stolen system credentials to remotely access the compromised web server to conduct internal reconnaissance and then perform lateral movement. ASEC did not observe any further malicious activities after Lazarus Group’s lateral movement. 
+
+ASEC highlighted that Lazarus Group frequently exploits improperly-configured, public-facing infrastructure in order to enable initial infection via  “Log4Shell,  public certificate vulnerability, [or] 3CX supply chain attack”. ASEC emphasized therefore, that it is critical for organizations to use attack-surface management services to prevent attacks like the ones carried out by Lazarus Group.
+
+In 2 New Campaigns, Kimsuky Distributes New RandomQuery Variant via Phishing, Installs Meterpreter Backdoor on Vulnerable Web Servers
+By Insikt Group | Published May 24, 2023 | Last modified May 31, 2023
+Note
+Diamond Model
+Entities
+Sources
+In mid-to-late May 2023, SentinelLabs and the AhnLab Security Emergency response Center (ASEC), reported on the following 2 ongoing Kimsuky threat campaigns: SentinelLabs reported that North Korean advanced persistent threat (APT) group Kimsuky was targeting “North Korea-focused information services, human rights activists, and DPRK-defector support organizations'' with phishing emails to deploy a variant of the RandomQuery malware that focuses on file enumeration and information exfiltration; and ASEC reported that Kimsuky was targeting the web servers of South Korean organizations to install Metasploit Meterpreter backdoor malware.
+
+While 1 campaign relied on carefully-tailored phishing campaigns to initiate its infection chain, the other exploited insecurely-configured public-facing interfaces. Both of the threat campaigns appeared to have a primary objective of establishing persistence to enable cyberespionage. While the campaign that used RandomQuery is ongoing as of May 23, 2023, it is unclear if the campaign targeting Windows IIS web servers is still ongoing.
+ 
+Kimsuky: Campaign Targeting North Korean Defector Support Organizations with RandomQuery
+According to SentinelLabs, Kimsuky’s campaign that targets organizations that support North Korean defectors began with phishing emails; used Microsoft Compiled HTML Help (CHM) files to distribute RandomQuery malware (a malware family frequently used by Kimsuky); and used RandomQuery to conduct file reconnaissance and exfiltrate system and hardware information, “laying the groundwork for subsequent precision attacks”.
+
+The phishing emails used in this campaign claimed to be from Daily NK, an online newspaper located in Seoul, South Korea that covers North Korean events. Kimsuky lured victims to download an attached Microsoft Compiled HTML Help (CHM) file. Upon execution of the CHM file, a Visual Basic (VB) script was executed at system startup, which then downloaded and executed the second-stage payload from the adversary-controlled command-and-control (C2) server via an HTTP GET request to the victim’s system. The second-stage payload was a VBScript RandomQuery variant. The RandomQuery malware collected system data, including running processes and installed applications, files, and directories. Kimsuky then exfiltrated the stolen data  to the C2 server.
+
+Kimsuky strategically used less common top-level domains (TLDs) and domain names for their malicious infrastructure and phishing emails, imitating standard .com TLDs to evade detection. SentinelLabs assessed that the campaign “indicates a shift towards [Kimsuky] using a variant of the RandomQuery malware that has the single objective of file enumeration and information exfiltration”, which contrasts from “RandomQuery variants supporting a wider array of features, such as keylogging and execution of further specialized malware”.
+
+Kimsuky: Campaign Targeting South Korean Windows IIS Web Servers
+
+ASEC observed Kimsuky targeting public-facing South Korean Windows IIS web servers that were likely unpatched and poorly-configured. Upon compromising these unsecure web servers, the threat actors executed a Powershell command to download Metasploit Meterpreter backdoor malware, and used Meterpreter as a stager to install proxy malware, again using a PowerShell command. Kimsuky is also known to use proxy malware. However, unique to this threat campaign, the proxy malware was developed in GoLang. ASEC assessed that the purpose of the proxy malware was to enable “RDP connection to the infected system in later stages”.
+
+For a complete description of technical data, indicators of compromise (IOCs), and methods for detection related to these campaigns, please refer to both SentinelLabs's and the ASEC's original report.
+
+According to Insikt Group research, Kimsuky is a North Korean state-sponsored threat group that was first documented in 2013 and has been highly active since 2022. Kimsuky is primarily cyber espionage-motivated and usually targets South Korean ​​individuals and organizations of interest to the North Korean government. Kimusky has also targeted Japanese and US government entities. Kimsuky commonly uses social engineering in their operations and their initial access vector is spearphishing.
+
+Historically, once Kimsuky gained initial access, the group used a custom Visual Basic script-based malware and PowerShell or Windows Command Shell for malware execution. Kimsuky usually achieves persistence through modifying system processes or exploiting Remote Desktop Protocol (RDP) and Virtual Network Computing (VNC) services. The group uses off-the-shelf commercial tools and process injection for privilege escalation, disables the system firewall, and deletes files after they are transferred to the C2 server for evading defenses.
+
+In order to safeguard against attacks like those carried out in these threat campaigns, organizations should consider both tactics, techniques, and procedures (TTPs) that are typical of Kimsuky, and those that appear to be newly added to the threat group’s attack arsenal.
+
+Typical Kimsuky TTPs
+
+Typical of Kimsuky, the primary initial access vector for one of these campaigns was phishing emails. Organizations should ensure they have a security best practices program in place to educate employees in methods to avoid victimization via social engineering. Network segmentation, the principles of least privilege, and conditional access policies can help limit a threat actor's access to systems in inevitable instances of human error.
+
+The other campaign involved the likely exploitation of unpatched public-facing systems. An organization’s first line of defense is always to ensure that its public-facing systems are properly configured to prevent opportunistic attacks and patched, via a patch management program.
+
+Additional methods frequently employed by Kimsuky that were observed in these campaigns included the use of a malicious CHM file attachment to initiate a stager; Visual Basic (VB) scripts to deliver malicious payloads; PowerShell commands to download malware; RandomQuery to conduct network enumeration and facilitate espionage operations.
+
+New Kimsuky TTPs
+
+The following TTPs were new additions to the Kimsuky attack arsenal: the use of a RandomQuery instance specifically focused on reconnaissance and exfiltration of system and hardware information (limited in functionality compared to earlier versions); the use proxy malware developed in GoLang; the use of the open-source tool Meterpreter; the use of and less-common TLDs that imitate standard .com TLDs to evade security detection (a method that is increasingly common in Kimusky campaigns). Network defenders can use this data and the specific IOCs provided by both SentinelLabs and ASEC to prime their security systems, including security information and event management (SIEM) software in combination with Endpoint Detection and Response (EDR) tools, to alert them to potential malicious activities related to Kimusky campaigns.
+
+Lazarus Group Linked To Campaign That Has Stolen $35 Million Worth of Cryptocurrency From Atomic Wallet Customers
+By Insikt Group | Published Jun 9, 2023
+Note
+Diamond Model
+Entities
+Sources
+The Record by Recorded Future released a report on June 5, 2023, regarding an ongoing campaign that has led to $35 million worth of cryptocurrency being stolen from customers of Atomic Wallet. On June 7, 2023, Elliptic, a blockchain analytics solution, assessed that the campaign is likely linked to the North Korean Lazarus Group. Atomic Wallet is a decentralized platform that supports Linux, Windows, Android, iOS, and macOS operating systems. Atomic Wallet confirmed on June 3, 2023, that they received reports that some of the user's wallets were compromised. On June 5, 2023, Atomic Wallet said that less than 1% of active monthly users were affected during the attack. In response to the attack, Atomic Wallet communicated with undisclosed blockchain analytics to block the stolen funds.
+
+Although the attack method used to access the users’ Atomic Wallet remains unverified, Certik researchers said that threat actors may have exploited a vulnerability in the Atomic Wallet application that exposed users’ private keys. Using the Recorded Future Intelligence Cloud, we did not observe instances of threat actors claiming responsibility for Atomic Wallet attacks across the dark web and underground forums tracked by Recorded Future.
+
+On June 7, 2023, a blockchain analytics solution, Elliptic assessed that the North Korean Lazarus Group likely carried out this cyberattack against Atomic Wallet based on the following evidence related to previous campaigns against cryptocurrency exchanges:
+
+• The laundering approach shares similarities with previous campaigns by Lazarus Group.
+• The use of Sinbad, which was used by Lazarus Group against Axie Infinity crypto heists. Sinbad is a coin mixer for Bitcoin cryptocurrency.
+• The portion of stolen cryptocurrency in the Atomic Wallet was sent to some of Lazarus Group's wallet addresses.
+
+Lazarus Group's Social Engineering Campaign Targeting Developers in Cryptocurrency and Cybersecurity Sectors on GitHub
+By Insikt Group | Published Jul 21, 2023
+Note
+Diamond Model
+Entities
+Sources
+On July 18, 2023, GitHub issued a warning about a social engineering campaign carried out by the Lazarus Group (Cyber Warfare Guidance Unit, Diamond Sleet). The campaign specifically targeted developers in the blockchain, cryptocurrency, online gambling, and cybersecurity sectors, with the intention of infecting their systems with malware. GitHub noted that the Lazarus Group’s latest campaign was “low volume”, and that no GitHub or NPM systems were compromised as a result of the campaign. Lazarus Group is a North Korea-affiliated threat group that has historically targeted victims in the cryptocurrency or blockchain-related sectors.
+
+During the campaign, the Lazarus Group created pseudo-profiles on social media platforms (LinkedIn, Slack, and Telegram) or hacked legitimate accounts on GitHub to interact with employees in technology firms. Once Lazarus Group established a trusted relationship with its victims, the threat actors invited the victims to collaborate on GitHub projects supposedly related to media players and cryptocurrency tools.
+
+Unknown to the victims, these projects contained malicious Node Package Manager (NPM) dependencies that downloaded additional malware onto the victims' devices. NPM serves as a central repository for open-source JavaScript code, making it convenient for developers to reuse code and manage dependencies in their projects. Threat actors frequently exploit the implicit trust that developers have in NPM packages to spread malware to the NPM user base.
+
+In response to the campaign, GitHub deactivated all NPM and GitHub accounts linked to the campaign and shared indicators of the associated domains, GitHub accounts, and NPM packages involved in the malicious activities.
+
+Jumpcloud Targeted By Cyberattack, Attribution Linked to Lazarus Group
+By Insikt Group | Published Jul 21, 2023 | Last modified Jul 21, 2023
+Note
+Diamond Model
+Entities
+Sources
+On July 20, 2023, CrowdStrike via Reuters assessed that the Lazarus Group, a North Korean nation state sponsored group, accessed systems of US enterprise software company JumpCloud in order to target the company’s cryptocurrency clients and steal cryptocurrency funds. On the same day, SentinelOne also reported that JumpCloud was targeted by a North Korean state sponsored advanced persistent threat (APT). This “highly confident” assessment by researcher Tom Hegel was made based on the identification of IOCs that are attributed to North Korean threat actors.
+
+The incident was initially discovered on June 27, 2023, 1 week after the threat actors conducted a spearphishing attack to gain access to JumpCloud's internal systems. Although initially no evidence was found to suggest customers were affected, the company decided to generate new customer credentials and access keys as well as rebuilding compromised infrastructure as a precautionary measure. However, on July 5, 2023, unusual activity was detected in the commands framework for a small group of customers during a follow-up investigation. JumpCloud then force-rotated all admin API keys and informed customers to generate new keys. JumpCloud disclosed the attack was highly targeted and affected specific customers. Details regarding the number of impacted customers have not been disclosed.
+
+JumpCloud is a directory-as-a-service company that aims to provide a replacement for Active Directory (AD) and offers features such as password and device management.
+
+CoinsPaid Attributes $37.3 Million Crypto Theft to The Lazarus Group
+By Insikt Group | Published Jul 28, 2023 | Last modified Jul 31, 2023
+Note
+Diamond Model
+Entities
+Sources
+CoinsPaid, an Estonian crypto payment platform, has disclosed that they experienced a cyberattack on July 22, 2023, leading to $37,200,000 worth of cryptocurrency being stolen. This attack was attributed to the Lazarus Group (Cyber Warfare Guidance Unit, Diamond Sleet), a North Korean advanced persistent threat group (APT), although CoinsPaid did not provide further details on how they linked Lazarus to the attack. . There was no independent confirmation of the link between the attack and Lazarus at the time of the disclosure.
+
+In response to the attack, CoinsPaid collaborated with Chainalysis, Binance, Crystal, Match Systems, Staked.us, OKCoinJapan, Valkyrieinvest, and Estonian law enforcement authorities to investigate the incident and track down the responsible threat actors.
+
+NPO Mashinostroyeniya Targeted by North Korean Threat Actors
+By Insikt Group | Published Aug 8, 2023
+Note
+Diamond Model
+Entities
+Sources
+The NPO Mashinostroyeniya (JSC MIC Mashinostroyenia), a major Russian missile and military spacecraft manufacturer, has been targeted in  a cyber intrusion attributed to ScarCruft and Lazarus Group, according to a report by SentinelOne on August 7, 2023. NPO Mashinostroyeniya possessed sensitive intellectual property tied to missile technology, which was being developed and used by the Russian military. In 2 distinct instances, the NPO Mashinostroyeniya experienced compromises of its internal IT infrastructure. One of these incidents involved a breach of a Linux email server, while the other used a Windows backdoor named OpenCarrot.
+
+The organization discovered the intrusion in mid-May 2022, a period closely aligned with Russia's veto of the United Nations (U.N.) sanctions against North Korea. During this period, the technology personnel at NPO Mashinostroyeniya noticed suspicious communications occurring between its internal processes and external infrastructure in their emails. Additionally, they identified a dynamic-link library (DLL) file within their internal systems that raised suspicions.
+
+During the investigation, SentinelOne confirmed that the DLL file was an OpenCarrot, a Windows operating system (OS) backdoor. This backdoor, associated with the Lazarus Group (Cyber Warfare Guidance Unit, Diamond Sleet), possessed a wide range of capabilities, including reconnaissance, manipulation of file systems and processes, and management of communication for compromised machines across local networks.
+
+Additionally, it also revealed suspicious network activity, suggesting a compromise of NPO Mashinostroyeniya's Linux email server, which was publicly hosted at vpk.npomash[.]ru (Intelligence Card) “185.24.244[.]11 (Intelligence Card)”. It was noted that the email server engaged in outbound communication with an infrastructure that has since been attributed to the APT37 (Cloud Dragon, Group 123, Reaper, Scarcruft, TAG-72). The compromised data provided valuable insights into the organization's network architecture and vulnerabilities.
+
+The Hacker News noted that, although the precise methods used to breach the email server and deploy OpenCarrot were undisclosed, the investigation into the attack infrastructure revealed 2 domains, centos-packages[.]com (Intelligence Card) and redhat-packages[.]com (Intelligence Card), that shared similarities to the names used by threat actors in a previous hack involving JumpCloud in June 2023. This alignment of two distinct North Korean threat actors targeting the same entity indicated a substantial strategic espionage mission with potential implications for North Korea's missile program.
+
+Labyrinth Chollima Persist in VMConnect Supply Chain Campaign with New Malicious Python Packages in PyPI Repository
+By Insikt Group | Published Sep 1, 2023
+Note
+Diamond Model
+Entities
+Sources
+On August 31, 2023, ReversingLabs reported that Lazarus Group (Labyrinth Chollima), had added 3 new malicious Python packages to the Package Index (PyPI) repository as part of an ongoing supply chain campaign known as VMConnect. The VMConnect campaign comprised a collection of Python packages that imitates open-source Python tools, with minor differences in descriptions and file structures. The main changes take place within the "init.py" file, where a malicious function from 'cookies.py' is executed, enabling the collection of data from compromised machines, allowing threat actors to download second-stage malware payloads.
+
+The 3 newly added malicious packages are as follows:
+
+tablediter (736 downloads): This package pretends to be a tool for editing tables.
+request-plus (43 downloads): This package impersonates the widely-used 'requests' Python library, commonly used for making HTTP requests.
+requestspro (341 downloads): This package also mimics 'requests' but with the addition of "pro" to its name, creating the illusion of an enhanced version of the legitimate library.
+
+Once data had been gathered, it was transmitted to the threat actors' command-and-control (C2) servers via a POST HTTP request. In response, the C2 server provided an obfuscated Python module that utilized Base64 and XOR encryption, along with additional instructions. This module also contained a URL to the second-stage payload. However, researchers couldn't access this payload at the time of the writing.
+
+Lazarus Group Distributes New QuiteRAT Malware via Previously-Patched ManageEngine Flaw (CVE-2022-47966) in Ongoing Campaign
+By Insikt Group | Published Sep 7, 2023
+Note
+Diamond Model
+Entities
+Sources
+On August 24, 2023, Cisco Talos reported about an ongoing campaign conducted by North Korea-linked Lazarus Group. The campaign involves use of a new remote access trojan (RAT) known as QuiteRAT, which Lazarus Group distributes by exploiting CVE-2022-47966, a ManageEngine ServiceDesk Plus vulnerability. The campaign began in early 2023 after Cisco Talos detected successful exploitation activity that targeted an unnamed internet backbone infrastructure provider based in Europe, with subsequent deployment of QuiteRAT. Additionally, Cisco Talos noted that the attacks occurred shortly after a proof-of-concept (PoC) exploit code for the CVE-2022-47966 was publicly-shared on GitHub.
+
+Cisco Talos’ overall telemetry shows that victims in this campaign included internet backbone infrastructure providers and healthcare entities in Europe and the US. Cisco Talos attributed the campaign to Lazarus Group with high confidence due to overlapping tactics, techniques, and procedures (TTPs) observed in this campaign with that of previous Lazarus Group campaigns.
+
+This recent campaign’s infection chain begins with Lazarus Group exploiting CVE-2022-47966, a ManageEngine ServiceDesk Plus flaw that was patched in October 2022, to gain initial access. From there, the threat actors install QuiteRAT, which immediately establishes connection with the command-and-control (C2) server. QuiteRAT then performs reconnaissance by gathering basic information from an infected device and sending it to the C2 server. This information includes the operating system used and the current version, device architecture (32 or 64-bit), patch information, service packs, MAC and IP addresses, and others.
+
+Further, Cisco Talos stated that QuiteRAT does not have built-in persistence capabilities, and as a result, Lazarus Group achieves persistence by manually executing commands in the infected device’s terminal Window. The commands pertain to creating registry keys that will allow QuiteRAT to persist in the system across reboots. Then, the malware proceeds to execute a different set of arbitrary commands on the target device to perform other malicious activities, such as downloading additional payloads. Cisco Talos did not provide further details about additional malware deployed in this campaign.
+
+Cisco Talos’ analysis of QuiteRAT shows that it shares similar functionalities and code designs with an older malware known as MagicRAT, which had been developed and historically distributed by Lazarus Group. For example, some coding libraries incorporated into QuiteRAT and MagicRAT were based off of the Qt framework, an open-source software development platform. Cisco Talos noted that Lazarus Groups’ use of the Qt framework makes malware analysis and detection more difficult, adding that the framework is not commonly observed in malware development.
+
+Furthermore, Cisco Talos assessed with high confidence that QuiteRAT is a newer variant of MagicRAT, with QuiteRAT having a smaller file size, likely in an attempt to evade detection more efficiently. Both malware, however, still share similar functionalities in terms of allowing adversaries to perform code execution attacks on an infected system.
+
+QuiteRAT is part of a relatively narrow malware family tree, in that QuiteRAT is a successor to MagicRAT, which has been linked in a September 2022 campaign to an older backdoor known as TigerRAT. This previous campaign, which was analyzed by Cisco Talos, was attributed to Lazarus Group, who exploited the Log4Shell vulnerability (CVE-2021-44228) for initial access. Victims of this older campaign are energy providers in Canada, Japan, and the US. TigerRAT was initially disclosed in 2021 by the Korean Internet and Security Agency (KISA) and the KrCERT (the National Computer Emergency Response Team in Korea), following the malware’s involvement in a December 2021 campaign dubbed Operation ByteTiger. This previous campaign targeted South Korean entities.
+
+Shortly after the discovery of QuiteRAT, Cisco Talos also revealed (on the same day) a new malware tracked as CollectionRAT, which is used in the recent QuiteRAT campaign. Similar to QuiteRAT and MagicRAT, Cisco Talos noted that CollectionRAT also allows Lazarus Group to conduct reconnaissance, perform arbitrary commands, and download additional payloads on victim networks. The researchers  explained, however, that although QuiteRAT and CollectionRAT are deployed within the same victim network, they appear to be deployed disparately; for example, QuiteRAT is installed right after CVE-2022-47966 is exploited, whereas CollectionRAT is distributed via a a malicious version of the open-source reverse-tunneling utility known as Plink. These different distribution methods suggest that the 2 RATs are deployed opportunistically, and that they are independent of each other despite operating within the same victim machine and malicious infrastructure.
+
+Just like the QuiteRAT malware family, CollectionRAT has also been linked by Cisco Talos to a previously-documented malware known as EarlyRAT (also referred to as Jupiter). The malware was attributed to a North Korean threat group known as Andariel, which is a subgroup of Lazarus Group, by Kaspersky researchers in June 2023. This relatively recent campaign also involved exploitation of the Log4Shell vulnerability for initial access.
+
+Based on the capabilities demonstrated by all 4 trojans linked to Lazarus Group, namely QuiteRAT, MagicRAT, TigerRAT, and CollectionRAT, the group appears to be distributing these malware for reconnaissance and/or espionage, at least at the time of writing. Additionally, each documented activity involving these 4 trojans  appears to be an improved version of the previous, with Lazarus Group choosing their targets opportunistically.
+
+The development of QuiteRAT, which appears to be a “lighter” version of MagicRAT, implies that Lazarus Group is both experimenting with and improving their arsenal. These improvements, which appear to be focused on upgrading existing malware occur at a relatively fast pace, given that they have both been developed and used in the wild in less than a year. As a result, we anticipate further developments related to this malware family.
+
+Furthermore, it is not immediately clear whether Lazarus Group will be using these new and improved tools to conduct larger, more financially-profitable operations. Many campaigns conducted by Lazarus Group are financially-motivated, wherein they are notable for conducting highly-targeted attacks on financial entities such as cryptocurrency exchanges and blockchains. However, research by Recorded Future also indicates that the group is heavily engaged with espionage operations.
+These latest developments demonstrated by Lazarus Group indicate that the group will continue to conduct sophisticated attacks. Therefore, we recommend the following mitigation measures to protect against these attacks:
+Apply the relevant patches for CVE-2022-47966; ManageEngine stated that the vulnerability can be remediated by updating affected products. Note that Lazarus Group is known to weaponize vulnerabilities for initial access, apart from conducting social engineering attacks, such as phishing.
+As noted by Cisco Talo, QuiteRAT is downloaded from an external IP address 146[.]4[.]21[.]94 (Intelligence Card), which has been linked to Lazarus Group since May 2022. IT administrators should block communications associated with this IP address to help prevent potential QuiteRAT infections.
+As much as possible, IT administrators should configure Windows terminal settings to restrict commands that allow for registry modification.
+Lastly, IT administrators should monitor inbound and outbound traffic for suspicious activity, such as attempts made by malicious actors to communicate between the local system and the C2 server. Firewalls should also be configured to detect and block malicious traffic.
+
+Mixin Network Confirms Cyberattack Resulting in the Loss of $200 Million Worth of Cryptocurrencies
+By Insikt Group | Published Sep 28, 2023 | Last modified Sep 29, 2023
+Note
+Diamond Model
+Entities
+Sources
+On September 25, 2023, Mixin Network, a peer-to-peer cryptocurrency transactional platform, disclosed that threat actors had infiltrated the database of its cloud service provider on September 23, 2023. As a result of the compromise, Mixin Network reported it lost approximately US$200 million worth of various cryptocurrencies. We were not able to determine if the stolen assets belonged to the company or its customers.
+
+Mixin Network temporarily suspended its deposit and withdrawal services. The Mixin incident stands out as one of the most noteworthy cryptocurrency heists of the year, prompting immediate speculation about the possible involvement of North Korea's Lazarus Group. However, at the time of writing, information on the identity of the threat actors responsible for the attack and the method used to acquire Mixin Network's assets remains sparse.
+
+Lazarus Group Exploited Zero-Day Vulnerability Found in A Certificate Software Commonly Used by Public Institutions and Universities to Infiltrate Systems of A South Korean Financial Firm
+By Insikt Group | Published Mar 9, 2023 | Last modified Oct 19, 2023
+Note
+Diamond Model
+Entities
+Sources
+On March 7, 2023, ASEC released a report on Lazarus Group’s malicious campaign exploiting a zero-day vulnerability in a certificate software commonly used by public institutions and universities. Lazarus Group exploited the vulnerability to access an undisclosed South Korean financial firm’s Windows 10 systems and perform lateral movement. However, ASEC did not disclose the vulnerable certificate software because the vulnerability was still in the process of full verification, and no software patch was available.
+
+Lazarus Group also initiated defense evasion techniques such as using Bring Your Own Vulnerable Driver (BYOVD) attack to disable anti-analysis software, timestamp modification (timestomping), updating the filename before deletion, execution artifact deletion, and masquerading payloads’ filename as a legitimate system file. Initial infiltration against the company began in May 2022, and researchers observed re-infiltration using the software 0-day vulnerability on October 21, 2022.
+
+According to ASEC's analysis of the affected systems, Lazarus Group abused the Service Host (svchost.exe) after successfully exploiting the certificate software or injecting malicious File Transfer Program files (ftp.exe) to move laterally within the targeted system. The compromised svchost.exe and ftp.exe allows Lazarus Group to elevate privileges in the infected systems, connect to multiple adversary-controlled command-and-control (C2) servers, side-load DLLs, and deploy additional backdoor loaders and their payloads. Additionally, perform the mentioned defense evasion techniques to stay under the radar.
+
+The full list of IOCs can be found at the end of ASEC’s report.
+
+Lazarus Group and Andariel Exploit CVE-2023-42793 in TeamCity Servers for Supply Chain Attacks
+By Insikt Group | Published Oct 19, 2023 | Last modified Oct 19, 2023
+Note
+Diamond Model
+Entities
+Sources
+On October 18, 2023, Microsoft reported that North Korean threat groups Lazarus Group (Lazarus) and Andariel, have been exploiting a vulnerability in TeamCity servers tracked as CVE-2023-42793. If exploited, CVE-2023-42793 allows for remote code execution, resulting in the theft of Local Security Authority Subsystem Service (LSASS) credentials which can then be used for  lateral network movement. In September, TeamCity patched CVE-2023-42793.
+
+Upon compromising TeamCity servers, Lazarus employed 2 attack chains: one involved deploying the ForestTiger malware as a backdoor to execute commands on the breached server. The second involved using DLL search order hijacking to deploy a malware loader named FeedLoad, which installed an unnamed remote access Trojan (RAT). Andariel created a 'krtbgt' admin account on the compromised server, executed commands to gather system information, and established a persistent connection with Andariel's servers by installing the HazyLoad proxy tool.
+
+Lazarus Group's Operation Dream Job Deploys Trojanized VNC Apps Targeting Defense, Nuclear Engineering, and Maritime Sectors
+By Insikt Group | Published Oct 19, 2023 | Last modified Oct 20, 2023
+Note
+Diamond Model
+Entities
+Sources
+On October 17, 2023, Kaspersky reported that the North Korean Lazarus Group has been targeting job seekers across the defense and nuclear industries via a trojanized virtual network computing (VNC) application that is embedded with an unnamed trojan, as part of their ongoing ‘Operation Dream Job’ campaign. Targets include entities in the production of radar systems, UAVs, military vehicles, and maritime companies. The group lured victims on platforms like LinkedIn, Telegram, and WhatsApp with fake job opportunities.
+
+Once executed, the trojanized VNC application deploys additional malware payloads:
+
+An LPEClient, which has the capability to collect data of the targeted systems, establish command-and-control (C2) connections, and circumvent behavior monitoring by disconnecting user-mode syscalls.
+An updated version of COPPERHEDGE, a backdoor equipped to execute arbitrary commands, conduct system reconnaissance, and exfiltrate data.
+A custom-made malware designed to transmit files to a C2 server.
+
+In order to avoid detection by security solutions that rely on behavior-based analysis, the trojan operates stealthily, activating only when the user chose a server from the menu of the Trojanized VNC client.
+
+Updated MATA Malware Used to Target Eastern European Oil, Gas, and Defense Firms
+By Insikt Group | Published Oct 20, 2023
+Note
+Diamond Model
+Entities
+Sources
+On October 18, 2023, Kaspersky (a Russia-based company) researchers disclosed that an updated version of the MATA backdoor malware had been used in cyberattacks targeting oil, gas, and defense sectors in Eastern Europe between August 2022 and May 2023. The framework has been active since at least 2018. The attacks involved breaching security solution administration panels by using spear-phishing emails to conduct surveillance and trick victims into downloading malicious executables that exploited the Microsoft Internet Explorer vulnerability, CVE-2021-26411. The updated MATA malware combines various modules, each designed to achieve specific objectives. These include a loader, a trojan, and an information stealer to gain persistence in targeted networks. The MATA malware exists in both Microsoft Windows and Linux variants, with the latest version featuring extensive remote control capabilities and support for various protocols. The threat actors also used techniques such as using a user-mode rootkit and CVE-2021-40449 exploit to bypass endpoint security tools and endpoint detection and response (EDR) systems.
+
+Although these attacks have previously been attributed to the Lazarus Group,  Kaspersky researchers note that the malware overlaps with both Lazarus Group activity as well as the ’APT groups associated with Five Eyes.
+
+Lazarus Group Deploys LightlessCan Backdoor Against Spanish Aerospace Company
+By Insikt Group | Published Sep 29, 2023 | Last modified Oct 24, 2023
+Note
+Diamond Model
+Entities
+Sources
+The North Korea-linked Lazarus Group has been identified as the perpetrator of a cyber espionage attack targeting an aerospace company in Spain. According to an ESET report published on September 29, 2023, Lazarus Group approached company employees while posing as a recruiter on LinkedIn, tricking them into opening a malicious executable file disguised as a coding challenge. ESET linked the attack to "Operation Dream Job", a long running spearphishing campaign wherein Lazarus Group aims to lure employees of strategic targets with enticing job opportunities. The ultimate objective of the attack is to deploy a sophisticated backdoor called LightlessCan.
+
+The attack began with the victim receiving messages on LinkedIn and being convinced to download and execute malicious ISO files, resulting in the compromise of the system. The attackers then use an HTTP(S) downloader called NickelLoader to deploy additional malware, including LightlessCan and a variant of BLINDINGCAN called miniBlindingCan. LightlessCan replicates the capabilities of numerous native Windows commands, allowing for operations within the backdoor rather than conspicuous console actions. This tactical adaptation heightens its stealth, complicating the detection and analysis of the threat actor's movements. The campaign also employed execution guardrails to prevent the payloads from being decrypted or run on unintended machines.
+
+DPRK-Linked Threat Actors Target Blockchain Engineers with 'KANDYKORN' macOS Malware
+By Insikt Group | Published Nov 2, 2023
+Note
+Diamond Model
+Entities
+Sources
+On November 1, 2023, Elastic Security Labs reported that threat actors associated with the Democratic People's Republic of Korea (DPRK) were targeting blockchain engineers from an undisclosed crypto exchange platform using a new macOS malware named "KANDYKORN." KANDYKORN features multi-stage malicious capabilities, enabling threat actors to access files, control data and files, and execute processes and commands on compromised systems. While Elastic Security Labs did not directly attribute this activity with a known DPRK group, it said it observed “overlaps” with tactics and infrastructure used by the Lazarus Group.
+
+The campaign began with threat actors posing as blockchain engineering community members on a public Discord server. The attackers used social engineering techniques to lure victims into downloading a ZIP archive file (Cross-Platform Bridges.zip). The malicious ZIP file was falsely presented as an arbitrage bot, a software tool designed for generating profits through cryptocurrency rate variances across platforms. Upon execution, the ZIP file activated the Python script “watcher.py”. When decompressed, this script contained a folder of 13 Python scripts which, among other activities, discreetly established outbound network connections and established local directory paths in the compromised machine. Another Python script, “testSpeed.py”, obtained a Python dropper file called “FinderTools” from a Google Drive URL, leading to the download and execution of a concealed payload named "SUGARLOADER." SUGARLOADER then established a connection within the threat actor’s command-and-control (C2) server to retrieve and execute the final macOS malware payload,  KANDYKORN. KANDYKORN was executed in-memory, waited for commands from the C2 server, and then performed data exfiltration to the C2 server and other malicious tasks.
+
+Lazarus Group Exploiting Security Flaws in Software Vendor to Deploy SIGNBT and LPEClient
+By Insikt Group | Published Oct 30, 2023 | Last modified Nov 16, 2023
+Note
+Diamond Model
+Entities
+Sources
+On October 27, 2023, Kaspersky reported a new North Korea-sponsored Lazarus Group campaign targeting a Russian software vendor’s encryption software; this campaign involves the deployment of the SIGNBT loader and LPEClient to steal source code and tamper with supply chains. Lazarus Group exploited previously-patched flaws in an unspecified software to enable the deployment of the malware. After Lazarus Group gained persistence, an in-memory loader deployed SIGNBT for command and control (C2) server communication, employing stage-specific prefixes: 
+
+SIGNBTLG: Initial connection
+SIGNBTKE: Gathering system metadata after a SUCCESS message from the C2 server
+SIGNBTGC: Fetching commands
+SIGNBTFI: Communication failure
+SIGNBTSR: Successful communication
+
+Lazarus Group also employed a Windows backdoor for process control, file operations, and further malware deployment, including LPEClient for controlling compromised systems and credential-dumping.  LPEClient was first discovered in 2020 and “is designed to collect victim information and download additional payloads from a remote server to run in memory”. Kaspersky observed multiple Lazarus campaigns throughout 2023, each involving different attack vectors but consistently employing LPEClient as the final-stage malware.
+
+Lazarus Group has been very active in the last 1 year, carrying out a wide variety of threat campaigns on varying targets with varying objectives. In fact, security researchers reported on numerous Lazarus Group campaigns that occurred from late September to October 2023 alone. Most of the campaigns were aimed at data theft and cyber espionage attacks on organizations operating in aerospace, defense, and nuclear sectors.
+
+On October 17, 2023, Kaspersky reported that as part of an ongoing campaign dubbed Operation Dream Job, Lazarus Group targeted job seekers across the defense and nuclear industries via a trojanized virtual network computing (VNC) application. Targets included entities in the production of radar systems, UAVs, military vehicles, and maritime companies. To achieve initial access in the target systems the group used spearphishing lures; the group lured victims working at targeted organizations to download malware via fake job opportunities on platforms like LinkedIn, Telegram, and WhatsApp. Operation Dream Job, coined by security researchers in 2020, encompasses all attack campaigns in which Lazarus Group lures employees of various strategic targets with enticing job opportunities via LinkedIn, with the ultimate goal of deploying malware on victims’ devices to enable cyber espionage or the theft of cryptocurrency. 
+
+In another recent Operation Dream Job campaign, ESET disclosed on September 29, 2023, that Lazarus Group carried out a cyber espionage attack on an unnamed aerospace company in Spain. Lazarus Group approached company employees while posing as a recruiter on LinkedIn, tricking them into opening a malicious executable file disguised as a coding challenge. The ultimate objective of the attack was to deploy a sophisticated backdoor called LightlessCan for espionage purposes.
+
+On October 18, 2023, Microsoft reported that Lazarus Group and Andariel had exploited a vulnerability in TeamCity servers tracked as CVE-2023-42793. CVE-2023-42793 allows for remote code execution, resulting in the theft of Local Security Authority Subsystem Service (LSASS) credentials which can then be used for lateral network movement. Upon compromising TeamCity servers, Lazarus employed 2 attack chains: one involved deploying the ForestTiger malware as a backdoor to execute commands on the breached server. The second involved using DLL search order hijacking to deploy a malware loader named FeedLoad, which installed an unnamed remote access Trojan (RAT). 
+
+Microsoft did not specify what types of organizations were targeted in this attack, nor the ultimate intent of the attack campaign. Although Microsoft did note that Lazarus Groups typical objectives include “espionage, data theft, financial gain, and network destruction”. According to its website, “TeamCity is a general-purpose continuous integration and continuous delivery/continuous deployment (CI/CD) software platform that allows for flexible workflows, collaboration and [software] development practices”. Targeting TeamCity servers could lead to the theft of proprietary source code from any organization that uses the service. According to open sources, companies that use TeamCity include Accenture, ebay, Stack Overflow, Apple, and Intuit, among others.
+
+First seen in 2009, when the group was involved in a series of distributed denial-of-service (DDoS) attacks, Lazarus Group has been observed targeting organizations within the aerospace, defense, engineering, finance, government, media, and technology sectors. The group uses a combination of commodity and open-source malware, as well as custom remote access trojans (RATs), and has also used multiple open source Offensive Security Tools to conduct network reconnaissance, credential access, and to establish persistence. Relevant to the TeamCity vulnerability and the details of this most recent threat campaign, Lazarus demonstrates a pattern of exploiting previously patched vulnerabilities. 
+
+Lazarus Group will likely continue to be a very active state-sponsored threat group that poses a persistent threat across the aerospace, defense, engineering, finance, government, media, and technology sectors. Of late, Lazarus Group favors targeting organizations operating in the aerospace, defense, and nuclear sectors to achieve persistence for cyber espionage purposes.  
+
+Although Lazarus Group is a well-resourced threat group with likely targeted objectives when it carries out an attack campaign, Lazarus most frequently targets organizations on an opportunistic basis; compared to other APT groups, its attacks may be easier to defend against via traditional security hygiene practices, such as credential hygiene, patch management, and mandatory security best practices training for employees. Aligning with this, the group frequently uses predictable methods of initial access. These predictable methods of initial access include job recruitment themed spearphishing lures and the exploitation of previously disclosed and patched vulnerabilities, as was the case with this threat campaign and the threat campaign targeting Team City servers. 
+
+Had the victim organization targeted in this campaign had a patch in place, Lazarus Group’s attack may have been prevented. Organizations are urged to ensure that they have a robust patch management program in place, to prevent such opportunistic attacks. This program should regularly interact with and receive data from a real-time threat intelligence function. The program should also incorporate the necessity of getting buy-in from all relevant stakeholders prior to patch deployment. For example, patching that requires services to be temporarily halted or altered would require getting buy-in from business operations managers. Holistic collaboration and information sharing will allow for efficient prioritization of patch deployments and facilitate a sustainable patch deployment program.
+
+Additionally, Lazarus Group used the known malware LPEClient, to enable its campaign. Threat hunters can prime their systems to detect infection by both LPEClient and the novel malware SIGNBT via the indicators of compromise (IOCs) provided and in Kaspersky’s original report. 
+
+To prevent attacks that go beyond opportunistic targeting of unpatched systems or to identify attacks that have resulted in threat actors achieving persistence on an enterprise device for data exfiltration purposes, organizations are urged to enrich their security systems with behavioral analytics tools. Splunk states that “behavioral analytics can help identify the presence of APTs by monitoring any unusual activity that deviates from typical patterns and behaviors,” given that “APTs aim to gain prolonged access to the server of an organization, making it more difficult to detect them.” In the event that Lazarus Group is able to infiltrate a system via spearphishing or an unpatched service and achieve persistence, behavioral analytics can help security teams identify and mitigate a Lazarus Group intrusion in a timely manner, regardless
+
+Diamond Sleet Supply Chain Attack Distributes Modified CyberLink Installer
+By Insikt Group | Published Nov 23, 2023 | Last modified Nov 28, 2023
+Note
+Diamond Model
+Entities
+Sources
+On November 22, 2023, Microsoft reported that the North Korean state-sponsored threat group Lazarus Group (tracked as Diamond Sleet by Microsoft) launched a supply chain attack using a modified installer for an application developed by CyberLink, a Taiwanese multimedia software company. Lazarus Group modified the CyberLink installer to distribute LambLoad, a trojan downloader and loader malware. This compromised installer, found on authentic CyberLink update infrastructure, was identified on over 100 devices globally, including in Japan, Taiwan, Canada, and the US. Additionally, Lazarus Group used a legitimate code signing certificate to authenticate the malicious installer. Microsoft has since added this certificate to its restricted certificate list, safeguarding customers from future exploitation.
+
+Prior to execution, LambLoad checked for security solutions like FireEye, CrowdStrike, or Tanium. If these solutions were present, the loader halted its code execution to avoid detection. If these solutions were not present — meaning the victim did not have FireEye, CrowdStrike, or Tanium installed —  LambLoad connected to 1 of 3 command-and-control (C2) servers, retrieving a second-stage payload disguised as a PNG file. This payload, once decrypted and run, established communication with callback servers for additional malicious instructions.
+
+According to Microsoft, Lazarus Group’s aim was to infiltrate systems for control, data theft, system disruption, espionage, and backdoor access creation. However, Microsoft stated that it has not yet observed any data exfiltration or other follow-on activities specific to this LambLoad campaign. Historically, Lazarus Group has used its access to victim environments to exfiltrate stolen data, move laterally across environments for follow-on exploitation, and establish persistent access to victim environments.
+
+Lazarus Group Supply Chain Attack Distributes Modified CyberLink Installer
+By Insikt Group | Published Dec 4, 2023
+Note
+Diamond Model
+Entities
+Sources
+On November 22, 2023, Microsoft reported that the North Korean state-sponsored threat group Lazarus Group (tracked as Diamond Sleet by Microsoft) launched a supply chain attack using a modified installer for an application developed by CyberLink, a Taiwanese multimedia software company. CyberLink develops various applications intended to allow playback and editing of photos and videos. Lazarus Group modified the CyberLink installer to distribute LambLoad, a trojan downloader and loader malware. This compromised installer was hosted on authentic CyberLink update infrastructure. Additionally, Lazarus Group used a legitimate code signing certificate to sign the malicious installer. Microsoft has since added this certificate to its restricted certificate list, but identified LambLoad on over 100 devices globally, including in Japan, Taiwan, Canada, and the US.
+
+Prior to execution, LambLoad checked for security solutions like FireEye, CrowdStrike, or Tanium. If these solutions were present, the loader halted its code execution to avoid detection. If these solutions were not present — meaning the victim did not have FireEye, CrowdStrike, or Tanium installed —  LambLoad connected to 1 of 3 command-and-control (C2) servers, retrieving a second-stage payload disguised as a PNG file. This payload, once decrypted and run, established communication with callback servers for additional malicious instructions.
+
+According to Microsoft, Lazarus Group’s aim was to infiltrate systems for control, data theft, system disruption, espionage, and backdoor access creation. However, Microsoft stated that it has not yet observed any data exfiltration or other follow-on activities specific to this LambLoad campaign. Historically, Lazarus Group has used its access to victim environments to exfiltrate stolen data, move laterally across environments for follow-on exploitation, and establish persistent access to victim environments.
+
+We used Recorded Future Sandbox analysis to retrieve additional data for each of the SHA-256 hashes associated with the malicious CyberLink installer (LambLoad) and PNG payloads, as shared by Microsoft. The following signatures were detected in Triage for these samples:
+
+166d1a6ddcde4e859a89c2c825cd3c8c953a86bfa92b343de7e5bfbfb5afb8be (LambLoad): Reads user/profile data of web browsers; Checks computer location settings; Modifies system certificate store; Suspicious use of SetWindowsHookEx
+089573b3a1167f387dcdad5e014a5132e998b2c89bff29bcf8b06dd497d4e63d (Second-stage PNG payload): Enumerates physical storage devices; Suspicious use of FindShellTrayWindow. A sample on November 28, 2023, was submitted by an organization in Petroleum, Oil and Gas-related equipment and services, Manufacturing industries.
+915c2495e03ff7408f11a2a197f23344004c533ff87db4b807cc937f80c217a1 (Decrypted PE from second-stage PNG): Unsigned Portable Executable (PE); Suspicious use of WriteProcessMemory
+
+Based on our sandbox analysis, we corroborate Microsoft’s findings that the LambLoad malware can view and modify web browser data, check for the data and time of the local host, and enable a callback function (hook function) via SetWindowsHookEx. Additionally, the second-stage PNG payload can actively search and list available physical storage devices (e.g., hard drives, USB drives) on a computer system, likely for the identification of sensitive data.
+
+Lazarus Group is known to use custom malware like LightlessCan, BLINDINGCAN, and wAgent, and Bookcode for remote access capabilities. Lazarus Group actors often combine these custom malware with open source offensive security tools to conduct network reconnaissance, credential access, and to establish persistence. Some of these open source tools include PuTTY, Responder, Adfind, and Mimikatz.
+
+We have observed Lazarus Group making frequent use of trojanized applications and installers to deliver malware to its targets to enable software supply chain attacks. In May 2020, Malwarebytes reported that Lazarus Group delivered Dacls RAT using a trojanized application for macOS called MinaOTP. Lazarus Group also previously created custom trojanized installers to deliver MATA framework malware, and was observed spreading BLINDINGCAN malware using a trojanized version of the open-source tool PuTTY. More recently, in March 2023, Insikt Group observed reports of a potential supply-chain compromise affecting 3CX VOIP softphone users that used a legitimate, signed binary. A month later, Mandiant discovered that the 3CX software supply chain attack was likely facilitated by collaboration between Lazarus Group and the North Korean threat group Kimsuky.
+
+Several Lazarus Group campaigns have also made use of stolen and forged digital certificates, which they used to sign malicious binaries. For example, Lazarus Group was previously linked to a 2020 supply chain attack in South Korea that used trojanized security software and stolen digital certificates to distribute remote administration tools on a target system. Additionally, Lazarus Group reportedly obtained code-signing certificates from Dream Security USA, a manufacturer of security devices and services, to sign the malware samples.
+
+Based on our sandbox analysis, we also recommend monitoring for suspicious use of SetWindowsHookEx, FindShellTrayWindow, and WriteProcessMemory functions. Monitoring for use of these functions can help prevent unauthorized or malicious activities that involve manipulation of system memory of other processes.
+
+The improper modification of code signing certificates poses a particular threat to organizations, given that they challenge the inherent trust users have in these certificates. We recommend that organizations analyze code signing certificates for hallmarks of an adversary and malicious developers, like their reuse of forged/legitimate company or certificate authority names. Malware repositories and prior research can also provide insight into previous ways that threat actors have obtained legitimate code signing certificates for malicious use which can be used to monitor for future patterns of activity.
+
+We recommend ensuring that your organization has reviewed IOCs associated with Lazarus Group activity to monitor for signs of suspicious activity in your organizations’ environment. To facilitate this process, Insikt Group provides Hunting Packages associated with Lazarus Group.
+
+Newly Discovered Threat Group, AeroBlade, Targets the US Aerospace Industry
+By Insikt Group | Published Dec 7, 2023
+Note
+Diamond Model
+Entities
+Sources
+On November 30, 2023, BlackBerry reported that it had observed a new threat actor dubbed AeroBlade targeting US aerospace organizations. AeroBlade reportedly targeted the sector in two phases: an initial test attack in September 2022 and a more advanced operation in July 2023. BlackBerry also noted that the threat actor improved its toolset in between the two attacks, increasing the sophistication of the operation.
+
+In both attacks, AeroBlade targeted victims with spearphishing emails with malicious Microsoft Word document attachments. These files were titled [redacted].docx. The document used remote template injection to download a second stage payload, which in turn executed an Extensible Markup Language (XML) file responsible for creating a reverse shell communicating over port 443 .
+
+Unique to the second attack, a dynamic link-library (DLL) file is the final payload, which acts as a reverse shell and features several anti-analysis mechanisms. These include sandbox detection, custom string encoding, disassembly protection via dead code and control flow obfuscation, and API hashing to mask Windows function abuse. In addition, the file used in the second more sophisticated attack enumerated directories from infected machines, likely for threat actors to be able to identify sensitive data on victim environments or to be able to use certain directories to establish persistence, given that the later attack also used the Windows Task Scheduler to achieve persistence.
+
+BlackBerry was unable to determine AeroBlade’s origins, although it assessed with a high degree of confidence that its activity was a commercial cyber-espionage campaign.
+
+Reports of AeroBlade’s recent attacks follow reports of other cyber threat events targeting the aerospace industry over the past 3 months. We identified events ranging from cybercriminals conducting ransomware attacks to advanced persistent threat (APT) groups conducting a cyber-espionage campaign against an aerospace company. In November 2023, the LockBit Gang leaked 43 gigabytes of files stolen from US aircraft company Boeing following a cyberattack that took place on October 27, 2023 (Boeing confirmed the attack). The leaked data included information on security protocols, IDs for restricted areas, CCTV camera locations, and other sensitive documents.
+
+In September 2023, the North Korea-linked Lazarus Group (Cyber Warfare Guidance Unit, Diamond Sleet) was reported to be the perpetrator of a cyber-espionage attack targeting an aerospace company in Spain. The attack involved employees of the company being approached by a fake recruiter on LinkedIn, who tricked them into opening a malicious executable file disguised as a coding challenge or quiz. This attack was part of a larger spearphishing campaign called Operation Dream Job, which aims to lure employees of strategic targets with enticing job opportunities.
+
+These 3 events do not necessarily mean that the industry as a whole faces increased threats. However, we recommend that defenders in the aerospace industry monitor these events, and the tactics, techniques, and procedures (TTPs) of the actors involved. We specifically recommend monitoring groups like AeroBlade and Lazarus Group, who specifically targeted aerospace companies in their attacks (compared to ransomware groups that tend to attack victims opportunistically).
+
+Based on the 2 types of attacks used by AeroBlade, we assess that the group will continue to hone its infrastructure and TTPs to conduct future attacks against US aerospace companies. However, to the extent that BlackBerry’s assessment of the group’s intent to commit commercial cyber espionage is accurate, AeroBlade’s operations can only continue to the extent that they remain undetected and unattributed — given that stealing company information through corporate espionage is widely illegal in the United States.
+
+Nonetheless, defenders that fit within AeroBlade’s victimology should focus on protecting against and detecting AeroBlade’s tools, which is predominantly done by monitoring known IoCs (listed below). At the organizational level, however, we also recommend protecting against spearphishing and phishing attacks, given the attack was initiated through a phishing document. Defenders can periodically train employees to avoid opening files from an unknown sender. By comparison, detecting the malicious files (DLLs) once they are already in a victim system is more difficult, since malicious DLLs are notoriously difficult to identify within environments.
+
+Lazarus Group Uses Log4Shell to Deploy DLang-Based Malware
+By Insikt Group | Published Dec 12, 2023 | Last modified Dec 15, 2023
+Note
+Diamond Model
+Entities
+Sources
+Cisco Talos discovered a new campaign conducted by the Lazarus Group, called “Operation Blacksmith,” which involves the use of 3 new DLang-based malware families to perform reconnaissance and data exfiltration. 2 of these families are remote access trojans (RATs), with 1 (called “NineRAT”) using Telegram bots and channels for command and control (C2) communications. Cisco observed overlap between this campaign and the activities of the North Korean state-sponsored group Andariel (Onyx Sleet, Silent Chollima), a sub-group of Lazarus Group.
+
+The infection chain began with the opportunistic exploitation of CVE-2021-44228 (Log4Shell) to gain initial access to victim networks. Once Lazarus Group established a foothold, they relied on a custom-made reverse proxy tool called HazyLoad for persistent backdoor access to the infected host. Lazarus Group and Andariel’s use of HazyLoad has been previously seen by Microsoft researchers once before in October 2023. 
+
+Then, the attackers used credential dumping tools like Mimikatz, and delivered NineRAT for a persistent form of communication with the target host. NineRAT interacted with Telegram over DLang-based libraries to blend in with network traffic while establishing C2 communications, performing system reconnaissance, and enabling file transfers. To further evade detection, the NineRAT malware used a modular infection chain to separate, upgrade, and modify individual components.
+
+Additionally, Lazarus Group deployed “BottomLoader”, a DLang-based downloader capable of retrieving and executing a next-stage payload, like HazyLoad. BottomLoader can also upload files to the C2 server using PowerShell. The threat actors were also seen using “DLRAT”, a tool that can load additional malware, establish remote access, retrieve commands from the C2, and execute commands. DLRAT first performs system reconnaissance, and then beacons to its C2 and carries out various commands for file renaming, file uploading, and self deletion. 
+
+Cisco noted that Lazarus Group has been increasingly relying on the use of uncommon technologies (e.g. DLang, QtFramework, PowerBasic) in their malware development, as seen in their MagicRAT and QuiteRAT variants. Lazarus’ shift to uncommon technologies speaks to a broader trend across the threat landscape of attackers using uncommon, “exotic”, or “rare” programming languages like Go, Rust, and Swift to write malware (as opposed to more commonly used coding languages like C/C++ or JavaScript).. These uncommon, newer programming languages offer threat actors developmental and operational advantages, for example better anti-analysis capabilities due to less robust detections for these newer or more uncommon programming languages. 
+
+We used a query to identify malware families created, modified, or employed by threat actors written in uncommon programming languages in the past year, and detected instances of this tactic used by state-sponsored threat actors, ransomware groups, and cybercriminals. 
+
+We also used the Recorded Future Sandbox to further analyze the hashes provided by Cisco associated with HazyLoad, NineRAT, BottomLoader, and DLRAT. A hash associated with NineRAT, for example, displayed the following malicious processes: Creates new service(s); Stops running service(s); Checks computer location settings; Executes dropped EXE; Loads dropped DLL. Security teams can use the Sandbox tool to further explore the behaviors associated with the malware to better understand their functionality on the infected host. 
+
+This campaign by Lazarus has targeted manufacturing, agricultural, and physical security companies. However, enterprises globally with infrastructure exposed to vulnerability exploitation, particularly the Log4Shell vulnerability, are at risk. To deter successful initial access, we recommend that all companies keep their public-facing applications up-to-date with the latest patches for vulnerabilities associated with known exploitation. For guidance about the Log4Shell more specifically, we recommend referring to Recorded Future’s overview: Log4Shell: How It’s Being Exploited and How to Mitigate Damage.
+
+We anticipate that threat actors will continue to adopt use of uncommon programming languages due to the broad amount of capabilities that they afford malware developers. In light of this trend, we recommend that security researchers and defenders maintain and employ behavior-based detections based on “uncommon” programming language variants like Go, Rust, and Swift. 
+
+C2 traffic over Telegram, like that used by NineRAT, can be particularly hard to detect since it can blend in as part of legitimate traffic. Organizations can enforce strict policies on outgoing connections, or block connections to and from services like Telegram if they are not needed for business functions. Additionally, to protect against Lazarus Groups’ RAT malwares, we recommend organizations configure intrusion detection systems (IDS), intrusion prevention systems (IPS), or any network defense mechanisms in place to alert on items such as the file hashes associated with NineRAT, BottomLoader, HazyLoad, and DLRAT; these are listed in Cisco’s report. Finally, organizations can use Recorded Future’s Hunting Packages to detect known IOCs associated with Lazarus Group activity more broadly.
+
+IOCs/Associated Malware/TTPs:  A full list of IOCs can be found in Cisco’s report and on GitHub.
+
+Lazarus Group Advances Cyber Espionage with Advanced DLL Technique Targeting South Korea
+By Insikt Group | Published Jan 25, 2024
+Note
+Diamond Model
+Entities
+Sources
+On January 23, 2024, AhnLab Security Intelligence Center (ASEC) reported that North Korea-linked Lazarus Group employed Dynamic-Link Library (DLL) side-loading techniques in an ongoing campaign. The Lazarus Group is an Advanced Persistent Threat (APT) group that primarily  targets South Korean companies, institutions, and think tanks. In this campaign, Lazarus Group weaponized legitimate executables and DLL files, including "wmiapsrv.exe", a legitimate Microsoft module, to load a malicious version of "wbemcomn.dll" and an additional malicious DLL, "netutils.dll". The DLLs function as backdoors to persist in the victim’s system and to evade detection. 
+
+The wbemcomn.dll file specifically checks the target system’s firmware by reading a function called GetSystemFirmwareTable. This indicates that Lazarus Group is targeting specific system architectures, suggesting that the campaign is highly targeted. Conversely, netutils.dll demonstrates a more direct method, wherein it can execute specified files without the need for checking the system’s firmware.
+
+ASEC’s analysis of the Lazarus Group's strategies underscores the necessity for improved monitoring and security protocols.
+
